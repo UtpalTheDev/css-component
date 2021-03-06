@@ -1,5 +1,19 @@
 :root{
 
+    --border-anim-bg-clr:black;
+
+    --alert-bor-clr:black;
+    --alert-rem-bg-clr:red;
+
+    --pri-btn-bg-clr:black;
+    --pri-btn-txt-clr:white;
+    --pri-btn-bor-clr:black;
+
+    --link-txt-clr:black;
+
+    --icon-btn-bg-clr:#E5E7EB;
+
+
 }
 
 .body{
@@ -20,16 +34,17 @@ align-items:center;
 }
 .navbar-border-anim{
     width:0;
-    transition:all 1s;
-    background-color: black;
+    transition:all 0.8s;
+    background-color:var(--border-anim-bg-clr);
     height:2px;
 
 }
-
 .navbar>div:hover .navbar-border-anim{
    width:100%;
 
 }
+
+
 
 /*with each element background in navbar
 .navbar>div:hover{
@@ -42,21 +57,21 @@ align-items:center;
 /* alert with remove */
 .alert{
     width:400px;
-    border:1px solid black;
+    border:1px solid var(--alert-bor-clr);
     text-align:center;
-    padding:5px 0;
+    padding:10px 5px;
     border-radius: 5px;
     position:relative;
-    height:100px;
+    
 }
 .alert>div{
   position:absolute;
   top:0;
   right:0;
-  background-color: red;
+  background-color: var(--alert-rem-bg-clr);
   border-radius:5px ;
   width:20px;
-  padding:3px;
+  padding:1px;
   cursor:pointer;
   
 }
@@ -66,12 +81,12 @@ align-items:center;
 /*primary button*/
 .primary-button{
     padding:5px 10px;
-    background-color: black;
-    color:white;
+    background-color: var(--pri-btn-bg-clr);
+    color:var(--pri-btn-txt-clr);
     text-decoration:none;
     margin:5px;  
     border-radius:5px;
-    border:1px solid black
+    border:1px solid var(--pri-btn-bor-clr)
     
 }
 
@@ -79,9 +94,60 @@ align-items:center;
 
 .link{
     text-decoration: none;
-    color:black;
+    color:var(--link-txt-clr);
 }
 .link>i{
     margin-right:5px;
 }
 
+/*icon-button*/
+
+.icon-button{
+    padding:0.5rem 1rem;
+    background-color:var(--icon-btn-bg-clr);
+    font-size:25px;
+    border-radius:50%;
+    border:none;
+    cursor:pointer;
+    outline:none;
+    width:57px;
+    height:53px;
+
+}
+.icon-button:active{
+    transform:scale(0.95);
+}
+
+/*floating-button*/
+
+.float-act-list{
+    display:none;
+    position:absolute;
+    width:57px;
+    height:250px;
+    top:-260px;
+   
+}
+.float-act-list>button{
+    margin:5px 0;
+
+}
+.floating-action{
+    position:fixed;
+}
+.float-act-btn{
+    
+    border:none;
+    font-size:25px;
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    cursor:pointer;
+    outline:none;
+    width:57px;
+    height:57px;
+    text-align: center;
+}
+.float-act-btn:active{
+    transition:all 0.8s ease;
+}
