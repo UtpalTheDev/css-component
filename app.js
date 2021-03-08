@@ -12,6 +12,6 @@ function floatClick(e){
 float_btn_val=1; }
 
  else{float_list.style.display=`none`;
- float_btn.style.transform=`rotate(90deg)`;
+ float_btn.style.transform=`rotate(0deg)`;
  float_btn_val=0;}
 }
