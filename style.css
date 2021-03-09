@@ -1,3 +1,34 @@
+@font-face {
+    font-family: 'Whitney';
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.eot');
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.eot?#iefix') format('embedded-opentype'),
+      url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.woff') format('woff'),
+      url('https://constant.myntassets.com/www/fonts/WhitneyHTF-Book.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
+    @font-face {
+    font-family: 'Whitney';
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.eot');
+    src: url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.woff') format('woff'),
+      url('https://constant.myntassets.com/www/fonts/WhitneyHTF-SemiBold.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+  }
+  
+
+
+
+
+
+
+
+
+
 :root{
 
     --border-anim-bg-clr:black;
@@ -150,7 +181,7 @@ align-items:center;
 }
 .float-act-list>button{
     padding:0.5rem 1rem;
-    background-color:var(--icon-btn-bg-clr);
+    background-color:rgb(240, 240, 240);
     font-size:25px;
     border-radius:50%;
     border:none;
@@ -226,11 +257,15 @@ position:relative;
 
 .cards{
     width:210px;
-    
+    position:relative;
     font-family:Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     text-overflow:ellipsis;
     
 }
+.cards:hover{
+    box-shadow:0 2px 16px 4px rgba(40,44,63,.07);
+}
+
 .cards-img{
     width:100%;
 }
@@ -252,11 +287,12 @@ position:relative;
 }
 
 .cards-desc-priceblock{
-    margin:10px 0 6px 0;
+    margin:8px 0 6px 0;
 }
 .cards-desc-price{
     font-size:14px;
     font-weight: 500;
+    color:#282c3f;
 
 }
 .cards-desc-oldprice{
@@ -264,12 +300,88 @@ position:relative;
     color:#7e818c;
     text-decoration: line-through;
     font-weight:400;
-    margin-left:5px;
+    margin-left:2.4px;
 
 }
 .cards-desc-discount{
     font-weight:400;
     font-size:12px;
     color:#ff905a;
-    margin-left:5px;
+    margin-left:2.4px;
+}
+
+.cards-wishcont{
+ position:absolute;
+ background-color: white;;
+ bottom:80px;
+ width:100%;
+ height:100px;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ visibility:hidden;
+ opacity:0;
+transition:visibility 0.5s ease,opacity 0.5s ease;
+ 
+}
+.cards-wishcont-button{
+    width:80%;
+    border:1px solid rgb(186, 186, 186);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:30px;
+    cursor:pointer;
+    color:#282c3f;
+    
+
+}
+.cards-wishcont-button>span{
+    font-size:11px;
+    font-weight: 500;
+    letter-spacing:0.3px;
+}
+.cards-wishcont-button:hover{
+    border:1px solid black;
+}
+.cards-wishcont-button>i{
+    margin-right: 7px;
+}
+.cards:hover .cards-wishcont{
+visibility:visible;
+opacity:1;
+}
+
+/*cards-badge*/
+
+.cards-badge{
+    position:absolute;
+    background-color:#efd3d7;
+    top:15px;
+    width:50px;
+    text-align:center;
+
+}
+
+/*cards dismiss*/
+
+.cards-dismiss{
+    position:absolute;
+    top:5px;
+    right:5px;
+    background-color:rgb(216, 216, 216);
+    border-radius:50%;
+    outline:none;
+    width:25px;
+    height:25px;
+    border:none;
+    border:1px solid rgb(216, 216, 216);
+    transition:border 0.5s ease;
+    cursor:pointer;
+}
+.cards-dismiss:hover{
+  border:1px solid gray;
+}
+.cards-dismiss:active{
+    transform:scale(0.9);
 }
