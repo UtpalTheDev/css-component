@@ -21,14 +21,6 @@
   }
   
 
-
-
-
-
-
-
-
-
 :root{
 
     --border-anim-bg-clr:black;
@@ -52,8 +44,6 @@ body{
 }
 
 
-
-
 /*navbar*/
 .navbar{
 display:flex;
@@ -66,14 +56,16 @@ align-items:center;
     cursor:pointer;
     transition:all 1s;
 }
-.navbar-border-anim{
+.navbar-border-anim>div:after{
+    content:"";
+    display:block;
     width:0;
     transition:all 0.8s;
     background-color:var(--border-anim-bg-clr);
     height:2px;
 
 }
-.navbar>div:hover .navbar-border-anim{
+.navbar-border-anim>div:hover>:after{
    width:100%;
 
 }
@@ -315,7 +307,7 @@ background:#FECACA;
 border:2px solid black;
 position:relative;
 }
-.avatar-img{
+.avatar>img{
     width:92%;
     height:92%;
     padding:4%;
@@ -328,7 +320,8 @@ position:relative;
 
 /*Avatar with badge*/
 
-.avtar-badge{
+.avatar-badge:before{
+  content:"";
   width:27%;
   height:27%;
   background-color: green;
@@ -345,6 +338,7 @@ position:relative;
 /*cards*/
 
 .cards{
+    background:white;
     width:210px;
     position:relative;
     font-family:Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
@@ -361,6 +355,7 @@ position:relative;
 .cards-desc{
     padding:0 10px;
     margin-top:12px;
+    
 }
 .cards-desc-title{
     font-size:16px;
