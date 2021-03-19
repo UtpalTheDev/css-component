@@ -161,12 +161,14 @@ background:#FECACA;
     background-color: var(--pri-btn-bg-clr);
     color:var(--pri-btn-txt-clr);
     text-decoration:none;
-    margin:5px;  
+    margin:2px;  
     border-radius:5px;
-    border:1px solid var(--pri-btn-bor-clr)
-    
+    border:1px solid var(--pri-btn-bor-clr);
+    cursor:pointer;
 }
-
+.primary-button:active{
+    transform:scale(0.95);
+}
 
 
 
@@ -203,7 +205,21 @@ background:#FECACA;
 .icon-button:active{
     transform:scale(0.95);
 }
-
+.icon-button.sm{
+    padding:0;
+    width:27px;
+    height:27px;
+}
+.icon-button.md{
+    padding:0;
+    width:37px;
+    height:37px;
+}
+.icon-button.lg{
+    padding:0;
+    width:47px;
+    height:47px;
+}
 
 
 
@@ -214,9 +230,9 @@ background:#FECACA;
   position:absolute;
   background-color:red;
   color:white;
-  font-size:40%;
-  width:15px;
-  height:15px;
+  font-size:56%;
+  width:30%;
+  height:30%;
   border-radius:50%;
   top:2%;
   right:3%;
@@ -291,8 +307,11 @@ background:#FECACA;
  width:50px;
  height:50px;
  border-radius:50%;
-border:2px solid black;
+
 position:relative;
+}
+.avatar-ring{
+    border:1px solid black;
 }
 .avatar>img{
     width:92%;
@@ -302,6 +321,18 @@ position:relative;
     cursor:pointer;
 }
 
+.avatar.sm{
+    width:20px;
+    height:20px;
+}
+.avatar.md{
+    width:30px;
+    height:30px;
+}
+.avatar.lg{
+    width:40px;
+    height:40px;
+}
 
 
 
@@ -358,7 +389,8 @@ position:relative;
 }
 
 .cards-desc-priceblock{
-    margin:8px 0 6px 0;
+    margin:8px 0 0px 0;
+    padding-bottom: 6px;
 }
 .cards-desc-price{
     font-size:14px;
@@ -470,13 +502,22 @@ opacity:1;
 /*responsive image*/
 
 .responsive-img{
-    max-width:100%;
+   
     min-width:200px;
 }
 .responsive-img>img{
     width:100%;
 }
 
+.responsive-img.sm{
+    max-width:20%;
+}
+.responsive-img.md{
+    max-width:50%;
+}
+.responsive-img.lg{
+    max-width:80%;
+}
 
 
 
@@ -491,7 +532,15 @@ opacity:1;
     border-radius:50%;
 }
 
-
+.round-img.sm{
+    max-width:20%;
+}
+.round-img.md{
+    max-width:30%;
+}
+.round-img.lg{
+    max-width:40%;
+}
 
 
 
@@ -511,12 +560,26 @@ opacity:1;
     -moz-apperance:none;
     background:#f2f2f2;
     padding:12px;
-    border-radius: 3px;
-    width:250px;
+    border-radius: 5px;
+    width:50%;
     outline:none;
     font-size:14px;
     box-shadow: none;
 }
+
+.input.sm>.input-text{
+    width:20%;
+}
+
+.input.md>.input-text{
+    width:30%;
+}
+.input.lg>.input-text{
+    width:40%;
+}
+
+
+
 .input .placeholder{
     position:absolute;
     left:12px;
