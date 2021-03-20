@@ -381,9 +381,9 @@
   <div class="title">HIGHLANDER</div>
   <div class="desc">Men Slim Fit Jeans</div>
   <div class="price">Rs: 1259</div>
-  <div class="btn-block">
-    <button><i class="fas fa-heart"></i></button><button>Add to Bag</button>
-  </div>
+  
+    <button class="wish"><i class="far fa-heart"></i></button><button class="cart">Add to Bag</button>
+  
 
 </div>
 
@@ -485,7 +485,18 @@
   <div class="textbox">
     <textarea placeholder="write something....." rows="" cols=""></textarea>
   </div>
-  
+  <hr>
+  <div class="textbox sm">
+    <textarea placeholder="write something....." rows="" cols=""></textarea>
+  </div>
+
+  <div class="textbox md">
+    <textarea placeholder="write something....." rows="" cols=""></textarea>
+  </div>
+
+  <div class="textbox lg">
+    <textarea placeholder="write something....." rows="" cols=""></textarea>
+  </div>
   <hr>
 
  
@@ -512,8 +523,6 @@
 
    <!--list in reverse/ stacked-->
 
-
-
    <!--list notifiaction-->
   <ul class="list list-notification">
   <li>
@@ -521,7 +530,9 @@
     <div>
       <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
       <span>Robin liked your post at 1.00 pm</span> <br>
-      <span>How border work in css? For border radius we need to write in css as "border:1px solid black", this will give 1px black colored border in all the side of the block </span></div>
+      <span>How border work in css? For border radius we need to write in css as "border:1px solid black", this will give 1px black colored border in all the side of the block.
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt a voluptas maxime ipsa dolore maiores velit quaerat cum officia repudiandae eius, incidunt inventore laboriosam sint nesciunt illum veritatis deleniti quas unde at delectus amet deserunt debitis. Eum unde molestiae, sapiente soluta minus dignissimos obcaecati vitae non provident asperiores nesciunt veniam perspiciatis consectetur quos voluptates facilis saepe nisi nihil adipisci, quo architecto sequi? Maiores aliquid nihil, impedit, libero id ipsa est quasi et qui expedita officia!  
+      </span></div>
   </li>   
   <li>
     <i class="fas fa-heart"></i>
@@ -551,8 +562,8 @@
 
  <div class="modal">
    <div class="modal-content">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque eligendi modi voluptatum provident sit voluptate commodi aspernatur alias eum deleniti molestiae itaque nulla rem dignissimos, suscipit quisquam quos odio ipsam aut. Inventore optio esse, voluptatibus rem incidunt ipsa totam veniam eaque, ipsam provident quia at beatae porro sed consequuntur minima nulla non dolores. Eius consectetur minima tempore perspiciatis ducimus, repellendus asperiores laboriosam voluptatem repudiandae culpa, laborum quia qui in? Quibusdam cumque vero dolorem earum!<br>
-     <div>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque eligendi modi voluptatum provident sit voluptate commodi aspernatur alias eum deleniti molestiae itaque nulla rem dignissimos, suscipit quisquam quos odio ipsam aut. Inventore optio esse, voluptatibus rem incidunt ipsa totam veniam eaque, ipsam provident quia at beatae porro sed consequuntur minima nulla non dolores. Eius consectetur minima tempore perspiciatis ducimus, repellendus asperiores laboriosam voluptatem repudiandae culpa, laborum quia qui in? Quibusdam cumque vero dolorem earum!
+     <div class="btn-block">
      <button class="modal-content-save">Save</button>
      <button class="modal-content-cancel">Cancel</button>
      </div>
@@ -564,19 +575,76 @@
 
  <div class="modal modal-remove">
   <div class="modal-content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque eligendi modi voluptatum provident sit voluptate commodi aspernatur alias eum deleniti molestiae itaque nulla rem dignissimos, suscipit quisquam quos odio ipsam aut. Inventore optio esse, voluptatibus rem incidunt ipsa totam veniam eaque, ipsam provident quia at beatae porro sed consequuntur minima nulla non dolores. Eius consectetur minima tempore perspiciatis ducimus, repellendus asperiores laboriosam voluptatem repudiandae culpa, laborum quia qui in? Quibusdam cumque vero dolorem earum!<br>
-    <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo neque eligendi modi voluptatum provident sit voluptate commodi aspernatur alias eum deleniti molestiae itaque nulla rem dignissimos, suscipit quisquam quos odio ipsam aut. Inventore optio esse, voluptatibus rem incidunt ipsa totam veniam eaque, ipsam provident quia at beatae porro sed consequuntur minima nulla non dolores. Eius consectetur minima tempore perspiciatis ducimus, repellendus asperiores laboriosam voluptatem repudiandae culpa, laborum quia qui in? Quibusdam cumque vero dolorem earum!
+    <div class="btn-block">
     <button class="modal-content-save">Save</button>
     <button class="modal-content-cancel">Cancel</button>
     </div>
+    <div><i class="fas fa-times"></i></div>
   </div>
-  <div><i class="fas fa-times"></i></div>
+  
 </div>
 
 
 <!--rating-->
 
 <div class="rating">
+  
+  <input type="radio" name="star" value=5 id="star5">
+  <label for="star5"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=4 id="star4"
+  ><label for="star4"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=3 id="star3">
+  <label for="star3"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=2 id="star2"
+  ><label for="star2"><i class="fas fa-star"></i></label>
+  
+  <input type="radio" name="star" value=1 id="star1" >
+  <label for="star1"><i class="fas fa-star"></i></label>
+ 
+
+</div>
+<hr>
+<div class="rating sm">
+  <input type="radio" name="star" value=5 id="star5">
+  <label for="star5"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=4 id="star4"
+  ><label for="star4"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=3 id="star3">
+  <label for="star3"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=2 id="star2"
+  ><label for="star2"><i class="fas fa-star"></i></label>
+  
+  <input type="radio" name="star" value=1 id="star1" >
+  <label for="star1"><i class="fas fa-star"></i></label>
+ 
+</div>
+
+<div class="rating md">
+  <input type="radio" name="star" value=5 id="star5">
+  <label for="star5"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=4 id="star4"
+  ><label for="star4"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=3 id="star3">
+  <label for="star3"><i class="fas fa-star"></i></label>
+
+  <input type="radio" name="star" value=2 id="star2"
+  ><label for="star2"><i class="fas fa-star"></i></label>
+  
+  <input type="radio" name="star" value=1 id="star1" >
+  <label for="star1"><i class="fas fa-star"></i></label>
+ 
+</div>
+
+<div class="rating lg">
   <input type="radio" name="star" value=5 id="star5">
   <label for="star5"><i class="fas fa-star"></i></label>
 
@@ -605,8 +673,8 @@
   <div class="cards">
     <img class="cards-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/5670018/2018/9/17/5d578199-2c1a-4001-8af6-570311ff43eb1537164174593-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Mildly-Distressed-Stre-1.jpg">
     <div class="cards-desc">
-      <span class="cards-desc-title">HIGHLANDER</span><br>
-      <span class="cards-desc-type">Men Slim Fit Jeans</span><br>
+      <span class="cards-desc-title">HIGHLANDER</span>
+      <span class="cards-desc-type">Men Slim Fit Jeans</span>
   
       <div class="cards-desc-priceblock">
         <span class="cards-desc-price">Rs. 1299</span>
@@ -623,8 +691,8 @@
   <div class="cards">
     <img class="cards-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/5670018/2018/9/17/5d578199-2c1a-4001-8af6-570311ff43eb1537164174593-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Mildly-Distressed-Stre-1.jpg">
     <div class="cards-desc">
-      <span class="cards-desc-title">HIGHLANDER</span><br>
-      <span class="cards-desc-type">Men Slim Fit Jeans</span><br>
+      <span class="cards-desc-title">HIGHLANDER</span>
+      <span class="cards-desc-type">Men Slim Fit Jeans</span>
   
       <div class="cards-desc-priceblock">
         <span class="cards-desc-price">Rs. 1299</span>
@@ -641,8 +709,8 @@
   <div class="cards">
     <img class="cards-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/5670018/2018/9/17/5d578199-2c1a-4001-8af6-570311ff43eb1537164174593-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Mildly-Distressed-Stre-1.jpg">
     <div class="cards-desc">
-      <span class="cards-desc-title">HIGHLANDER</span><br>
-      <span class="cards-desc-type">Men Slim Fit Jeans</span><br>
+      <span class="cards-desc-title">HIGHLANDER</span>
+      <span class="cards-desc-type">Men Slim Fit Jeans</span>
   
       <div class="cards-desc-priceblock">
         <span class="cards-desc-price">Rs. 1299</span>
@@ -667,8 +735,8 @@
   <div class="cards">
     <img class="cards-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/5670018/2018/9/17/5d578199-2c1a-4001-8af6-570311ff43eb1537164174593-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Mildly-Distressed-Stre-1.jpg">
     <div class="cards-desc">
-      <span class="cards-desc-title">HIGHLANDER</span><br>
-      <span class="cards-desc-type">Men Slim Fit Jeans</span><br>
+      <span class="cards-desc-title">HIGHLANDER</span>
+      <span class="cards-desc-type">Men Slim Fit Jeans</span>
   
       <div class="cards-desc-priceblock">
         <span class="cards-desc-price">Rs. 1299</span>
@@ -685,8 +753,8 @@
   <div class="cards">
     <img class="cards-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/5670018/2018/9/17/5d578199-2c1a-4001-8af6-570311ff43eb1537164174593-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Mildly-Distressed-Stre-1.jpg">
     <div class="cards-desc">
-      <span class="cards-desc-title">HIGHLANDER</span><br>
-      <span class="cards-desc-type">Men Slim Fit Jeans</span><br>
+      <span class="cards-desc-title">HIGHLANDER</span>
+      <span class="cards-desc-type">Men Slim Fit Jeans</span>
   
       <div class="cards-desc-priceblock">
         <span class="cards-desc-price">Rs. 1299</span>
@@ -703,8 +771,8 @@
   <div class="cards">
     <img class="cards-img" src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/5670018/2018/9/17/5d578199-2c1a-4001-8af6-570311ff43eb1537164174593-Roadster-Men-Blue-Skinny-Fit-Mid-Rise-Mildly-Distressed-Stre-1.jpg">
     <div class="cards-desc">
-      <span class="cards-desc-title">HIGHLANDER</span><br>
-      <span class="cards-desc-type">Men Slim Fit Jeans</span><br>
+      <span class="cards-desc-title">HIGHLANDER</span>
+      <span class="cards-desc-type">Men Slim Fit Jeans</span>
   
       <div class="cards-desc-priceblock">
         <span class="cards-desc-price">Rs. 1299</span>
@@ -806,7 +874,7 @@
 <!--Drawer-->
 
  <div class="sidenav">
-  <a href="javascript:void(0)" class="sidenav-closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)" class="sidenav-closebtn" onclick="closeNav()">x</a>
 
   <a href="#">About</a>
   <a href="#">Services</a>
