@@ -1101,15 +1101,20 @@ text-align:center;
     transform:translateX(-50%);
     bottom:-10%;
     background:#f2f2f2;
-    animation:toastanim 5s ease 0s infinite forwards;
+    display:none;
     width:40%;
     min-height:40px;
 
 }
+.toastanim{
+    display:flex;
+    animation:toastanimation 5s ease 0s forwards;
+}
 .toast>i{
 
 position:absolute;
-top:3%;
+top:38%;
+transform:translateX(-50%);
 right:1%;
 cursor:pointer;
 }
@@ -1120,7 +1125,7 @@ cursor:pointer;
     margin-right:10px;
 }
 
-@keyframes toastanim{
+@keyframes toastanimation{
     0%{
         opacity:0;
      bottom:-10%;
@@ -1133,9 +1138,15 @@ cursor:pointer;
     90%{ bottom:5%;
         opacity:1;
     }
-    100%{
+    99%{
         bottom:5%;
       opacity:0;
+    }
+    100%{
+        bottom:-10%;
+        opacity:0;
+        display:none;
+        
     }
 }
 
@@ -1215,6 +1226,69 @@ cursor:pointer;
        height:3px;
      
    }
+   /*hamburger--------type 2-----------*/
+   .ham-t1{
+   display:flex;
+  flex-direction:column;
+  width:70px;
+  cursor:pointer;
+  transform:scale(0.5);
+  position:absolute;
+  top:0;
+  right:2%;
+}
+
+.ham-t1 span{
+  background: black;
+  border-radius:10px;
+  height:7px;
+  margin: 7px 0;
+  transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+}
+
+
+.ham-t1 span:nth-of-type(1){
+  width:50%;
+  
+}
+
+.ham-t1 span:nth-of-type(2){
+  width:100%;
+}
+
+
+.ham-t1 span:nth-of-type(3){
+  width:75%;
+ 
+}
+
+
+.ham-t1 input[type="checkbox"]{
+  display:none;
+}
+
+
+.ham-t1 input[type="checkbox"]:checked ~ span:nth-of-type(1){
+  transform-origin:bottom;
+  transform:rotatez(45deg) translate(8px,0px)
+}
+
+
+.ham-t1 input[type="checkbox"]:checked ~ span:nth-of-type(2){
+  
+  transform-origin:top;
+  transform:rotatez(-45deg)
+}
+
+
+.ham-t1 input[type="checkbox"]:checked ~ span:nth-of-type(3){
+  
+  transform-origin:bottom;
+  width:50%;
+  transform: translate(30px,-11px) rotatez(45deg);
+
+}
    /*hamburger-animation--------------------------*/
    .ham-anim>div:nth-child(2){
        animation:anim2 0.8s ease forwards ; 
@@ -1280,6 +1354,17 @@ cursor:pointer;
       padding-top:60px;
 
   }
+  .sidenav-t1{
+    width:0;
+    position:fixed;
+    height:100%;
+    background:black;
+    top:5%;
+    right:0;
+    overflow:hidden;
+    transition: 0.5s;
+    padding-top:60px;
+  }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -1287,6 +1372,15 @@ cursor:pointer;
     color: #818181;
     display: block;
     transition: 0.3s;
+  }
+
+  .sidenav-t1 a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size:1.2em;
+    color: #818181;
+    display: block;
+    transition: 0.3s;  
   }
   .sidenav a:hover {
     color: #f1f1f1;
