@@ -671,7 +671,8 @@ font-size:16px;
     position:relative;
     font-size:14px;
     padding-top:20px;
-    margin-bottom:5px;
+   
+   
     
 }
 .input .input-text{
@@ -687,17 +688,23 @@ font-size:16px;
     outline:none;
     font-size:14px;
     box-shadow: none;
+    margin:1em 0;
+    height:18px;
+
 }
 
 .input.sm>.input-text{
     width:20%;
+    height:0.5em;
 }
 
 .input.md>.input-text{
     width:30%;
+    height:0.7em;
 }
 .input.lg>.input-text{
     width:40%;
+    height:0.9em;
 }
 
 
@@ -713,12 +720,12 @@ font-size:16px;
     color 0.2s ease;
 }
 .input .input-text:focus + .placeholder{
-    top:0px;
+    top:10px;
     font-size:12px;
     color:#222;
 }
 .input .input-text:valid + .placeholder{
-    top:0px;
+    top:10px;
     font-size:12px;
     color:#222;
 }
@@ -757,7 +764,9 @@ font-size:16px;
     margin-top:20px;
 
 }
-
+.textbox>textarea{
+    font-size: inherit;
+}
 .textbox.sm{
     max-width:20%;
 }
@@ -906,7 +915,7 @@ background-color: rgba(0,0,0, 0.4);
 }
 .modal-content button{
     border:none;
-    background:#f2f2f2;
+    
     padding:5px 10px;
     font-size:16px;
     border-radius:5px;
@@ -920,7 +929,8 @@ background-color: rgba(0,0,0, 0.4);
  transform:scale(0.95);
 }
 .modal-content .modal-content-cancel{
-    margin:5px 10px
+    margin:5px 10px;
+    background:#E2E2E2;
 }
 .modal-content .modal-content-save{
     background:#3B82F6;
@@ -971,6 +981,9 @@ transform:rotateY(180deg);
 
 .rating label:hover~label>i,.rating label:hover>i,.rating>input:checked~label>i{
     color:#1aba51;
+}
+.rating.yellow label:hover~label>i,.rating.yellow label:hover>i,.rating.yellow>input:checked~label>i{
+    color:#FFDF00;
 }
 
 
