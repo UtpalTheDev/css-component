@@ -1101,15 +1101,20 @@ text-align:center;
     transform:translateX(-50%);
     bottom:-10%;
     background:#f2f2f2;
-    animation:toastanim 5s ease 0s infinite forwards;
+    display:none;
     width:40%;
     min-height:40px;
 
 }
+.toastanim{
+    display:flex;
+    animation:toastanimation 5s ease 0s forwards;
+}
 .toast>i{
 
 position:absolute;
-top:3%;
+top:38%;
+transform:translateX(-50%);
 right:1%;
 cursor:pointer;
 }
@@ -1120,7 +1125,7 @@ cursor:pointer;
     margin-right:10px;
 }
 
-@keyframes toastanim{
+@keyframes toastanimation{
     0%{
         opacity:0;
      bottom:-10%;
@@ -1133,9 +1138,15 @@ cursor:pointer;
     90%{ bottom:5%;
         opacity:1;
     }
-    100%{
+    99%{
         bottom:5%;
       opacity:0;
+    }
+    100%{
+        bottom:-10%;
+        opacity:0;
+        display:none;
+        
     }
 }
 
@@ -1195,7 +1206,6 @@ cursor:pointer;
    .toast-warning>i{
        color:white;
    }
-     
 
 
    /*hamburger---------------------------------*/
