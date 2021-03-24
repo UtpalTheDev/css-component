@@ -153,16 +153,12 @@ background:#FECACA;
 
 }
 
-
-
-
-
 /*------------------------------------------------------------------------*/
 /*button*/
 
 /*primary button*/
 .primary-button{
-    padding:0.3em 0.5em;
+    padding:0.3em 0.7em;
     background-color: var(--pri-btn-bg-clr);
     color:var(--pri-btn-txt-clr);
     text-decoration:none;
@@ -170,6 +166,7 @@ background:#FECACA;
     border-radius:5px;
     border:1px solid var(--pri-btn-bor-clr);
     cursor:pointer;
+    letter-spacing: 0.3px;
     font-family:Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 }
 .primary-button:active{
@@ -179,10 +176,12 @@ background:#FECACA;
 /*secondary-button---------*/
 
 .secondary-button{
-    padding:0.3em 0.5em;
+    padding:0.3em 0.7em;
     font-family:Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     margin:1em; 
     border:none;  
+    letter-spacing: 0.3px;
+
     border-radius:5px;
     cursor:pointer;
     background:white;
@@ -962,7 +961,7 @@ background: #f2f2f2;;
 display:flex;
 justify-content:space-between;
 font-size:20px;
-width:10em;
+width:7em;
 transform:rotateY(180deg);
 }
 
@@ -1214,7 +1213,7 @@ cursor:pointer;
    .ham{
        width:50px;
        height:50px;
-       margin-left:20%;
+       
        position:relative;
        overflow:hidden;
        padding:3px;
@@ -1359,7 +1358,7 @@ cursor:pointer;
     position:fixed;
     height:100%;
     background:black;
-    top:5%;
+    top:10%;
     right:0;
     overflow:hidden;
     transition: 0.5s;
@@ -1369,15 +1368,17 @@ cursor:pointer;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size:1.2em;
+   
     color: #818181;
     display: block;
     transition: 0.3s;
   }
 
   .sidenav-t1 a{
-    padding: 8px 8px 8px 32px;
+    padding: 8px 32px 8px 8px;
     text-decoration: none;
     font-size:1.2em;
+    text-align: right;
     color: #818181;
     display: block;
     transition: 0.3s;  
@@ -1385,7 +1386,12 @@ cursor:pointer;
   .sidenav a:hover {
     color: #f1f1f1;
   }
+  .sidenav-t1 a:hover{
+    color: #f1f1f1;
+
+  }
   .sidenav-closebtn {
+      cursor:pointer;
     position: absolute;
     top: 0;
     right: 25px;
