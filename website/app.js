@@ -1,11 +1,13 @@
 let float_btn=document.querySelector(".float-act-btn");
 let float_list=document.querySelector(".float-act-list");
 let float_btn_val=0;
-/*
+try{
 let toast_suc_elem=document.querySelector(".toast-success");
-
-
 let toastSuccess=document.querySelector(".toastSuccess");
+
+
+
+
 toastSuccess.addEventListener("click",()=>{
     toast_suc_elem.classList.add("toastanim")
     toastSuccess.style.cursor="not-allowed"
@@ -47,36 +49,79 @@ toastInfo.addEventListener("click",()=>{
 setTimeout(()=>{toast_info_elem.classList.remove("toastanim"); toastInfo.style.cursor="pointer"
 
 },5000)});
+}
+catch{
+    console.log("element is not present in html")
+}
 
-*/
+try{
 let ham_btn=document.querySelector(".ham");
+let ham_btn_t1=document.querySelector("#check");
 
 let sidenav=document.querySelector(".sidenav");
+let sidenav_t1=document.querySelector(".sidenav-t1");
+
 
 let sidenav_close=document.querySelector(".sidenav-closebtn");
 
-float_btn.addEventListener("click",floatClick);
-
 ham_btn.addEventListener("click",sidenavopen);
+
+ham_btn_t1.addEventListener("click",sidenav_t1_toggle);
+let ham_btn1_val=0;
 
 sidenav_close.addEventListener("click",sidenavclose);
 
-function floatClick(e){
- if(float_btn_val===0)
- {float_list.style.display=`block`;
- float_btn.style.transform=`rotate(45deg)`;
-float_btn_val=1; }
+function sidenav_t1_toggle()
+{
+    if(ham_btn1_val===0)
+    {
+        sidenav_t1.style.width=`250px`;
+        ham_btn1_val=1;
+    }
+    else{
+        sidenav_t1.style.width=`0px`;
+        ham_btn1_val=0;
 
- else{float_list.style.display=`none`;
- float_btn.style.transform=`rotate(0deg)`;
- float_btn_val=0;}
+    }
 }
+
 
 function sidenavopen(){
- sidenav.style.width=`250px`;
+    sidenav.style.width=`250px`;
+   }
+   
+   function sidenavclose(){
+       sidenav.style.width=`0px`;
+      }
+}
+catch{
+console.log("hamberger elements not in html");
 }
 
-function sidenavclose(){
-    sidenav.style.width=`0px`;
+try{
+float_btn.addEventListener("click",floatClick);
+function floatClick(e){
+    if(float_btn_val===0)
+    {float_list.style.display=`block`;
+    float_btn.style.transform=`rotate(45deg)`;
+   float_btn_val=1; }
+   
+    else{float_list.style.display=`none`;
+    float_btn.style.transform=`rotate(0deg)`;
+    float_btn_val=0;}
    }
+}
+catch{
+    console.log("float button not present in html");
+}
+
+try{
+
+}
+catch{
+    
+}
+
+
+
    
