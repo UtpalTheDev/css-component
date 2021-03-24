@@ -1,69 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>alert</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-</head>
-<body>
-    <!--list-->
 
-    <ul class="list">
-        <li>Jeans</li>
-        <li>Shirt</li>
-        <li>Mobile</li>
-        <li>Laptop</li>
-        <li>Charger</li>
-      </ul>
-  <hr>
-    <!--list with icon-->
-     
-    <ul class="list list-icon">
-      <li><i class="fas fa-send"></i>Send</li>
-      <li><i class="fas fa-hashtag"></i>Hashtag</li>
-      <li><i class="fa fa-video-camera"></i>Video Call</li>
-      <li><i class="fas fa-upload"></i>Upload</li>
-      <li><i class="fas fa-info"></i>Info</li>
-    </ul>
-  <hr>
-  
-     <!--list in reverse/ stacked------------------------------------------------------------->
-  
-     <!--list notifiaction-->
-    <ul class="list list-notification">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alert</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--list-->
+  <div class="navbar-heading h6"><h6>List</h6></div>
+  <div class="navbar-sub-heading-1 xl" style="margin-left:1em;margin-bottom:1em;">Default List</div>
+
+  <ul class="list">
+    <li>Jeans</li>
+    <li>Shirt</li>
+    <li>Mobile</li>
+    <li>Laptop</li>
+    <li>Charger</li>
+  </ul>
+  <br>
+  <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%253Cli%253EJeans%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EShirt%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253EMobile%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253ELaptop%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253ECharger%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E"
+  style="width: 100%; height: 204px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+<br>
+  <!--list with icon-->
+  <div class="navbar-sub-heading-1 xl" style="margin-left:1em;margin-bottom:1em;">List with Icon</div>
+
+  <ul class="list list-icon">
+    <li><i class="fas fa-send"></i>Send</li>
+    <li><i class="fas fa-hashtag"></i>Hashtag</li>
+    <li><i class="fa fa-video-camera"></i>Video Call</li>
+    <li><i class="fas fa-upload"></i>Upload</li>
+    <li><i class="fas fa-info"></i>Info</li>
+  </ul>
+  <br>
+  <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cul%2520class%253D%2522list%2520list-icon%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ci%2520class%253D%2522fas%2520fa-send%2522%253E%253C%252Fi%253ESend%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ci%2520class%253D%2522fas%2520fa-hashtag%2522%253E%253C%252Fi%253EHashtag%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ci%2520class%253D%2522fa%2520fa-video-camera%2522%253E%253C%252Fi%253EVideo%2520Call%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ci%2520class%253D%2522fas%2520fa-upload%2522%253E%253C%252Fi%253EUpload%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%253Ci%2520class%253D%2522fas%2520fa-info%2522%253E%253C%252Fi%253EInfo%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E"
+  style="width: 100%; height: 204px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+<br>
+
+  <!--list in reverse/ stacked------------------------------------------------------------->
+  <div class="navbar-sub-heading-1 xl" style="margin-left:1em;margin-bottom:1em;">Stacked List</div>
+
+  <!--list notifiaction-->
+  <ul class="list list-notification">
     <li>
       <i class="fas fa-heart"></i>
       <div>
-        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        
         <span>Robin liked your post at 1.00 pm</span> <br>
-        <span>How border work in css? For border radius we need to write in css as "border:1px solid black", this will give 1px black colored border in all the side of the block.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt a voluptas maxime ipsa dolore maiores velit quaerat cum officia repudiandae eius, incidunt inventore laboriosam sint nesciunt illum veritatis deleniti quas unde at delectus amet deserunt debitis. Eum unde molestiae, sapiente soluta minus dignissimos obcaecati vitae non provident asperiores nesciunt veniam perspiciatis consectetur quos voluptates facilis saepe nisi nihil adipisci, quo architecto sequi? Maiores aliquid nihil, impedit, libero id ipsa est quasi et qui expedita officia!  
-        </span></div>
-    </li>   
+        
+        <span>How border works in css? For border radius we need to write in css as "border:1px solid black", this will
+          give 1px black colored border in all the side of the block.
+        </span>
+
+      </div>
+    </li>
     <li>
       <i class="fas fa-heart"></i>
       <div>
-        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        
         <span>Robin liked your post at 2.30 pm</span> <br>
-        <span>How border work in css? For border radius we need to write in css as "border:1px solid black", this will give 1px black colored border in all the side of the block </span></div>
-    </li> 
+        
+        <span>How border works in css? For border radius we need to write in css as "border:1px solid black", this will
+          give 1px black colored border in all the side of the block 
+        </span>
+
+      </div>
+    </li>
     <li>
       <i class="fas fa-heart"></i>
       <div>
-        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        
         <span>Robin liked your post at 5.38 pm</span> <br>
-        <span>How border work in css? For border radius we need to write in css as "border:1px solid black", this will give 1px black colored border in all the side of the block </span></div>
-    </li> 
+        
+        <span>How border works in css? For border radius we need to write in css as "border:1px solid black", this will
+          give 1px black colored border in all the side of the block 
+        </span>
+      
+      </div>
+    </li>
     <li>
       <i class="fas fa-heart"></i>
       <div>
-        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"><br>
+        
         <span>Robin liked your post at 7.10 pm</span> <br>
-        <span>How border work in css? For border radius we need to write in css as "border:1px solid black", this will give 1px black colored border in all the side of the block </span></div>
-    </li>  
-    </ul>
+        
+        <span>How border works in css? For border radius we need to write in css as "border:1px solid black", this will
+          give 1px black colored border in all the side of the block 
+        </span>
+      
+      </div>
+    </li>
+  </ul>
+  <br>
+  <iframe
+  src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=seti&wt=none&l=auto&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%253Cul%2520class%253D%2522list%2520list-notification%2522%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1535713875002-d1d0cf377fde%253Fixid%253DMXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%25253D%25253D%2526ixlib%253Drb-1.2.1%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D500%2526q%253D60%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ERobin%2520liked%2520your%2520post%2520at%25201.00%2520pm%253C%252Fspan%253E%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EHow%2520border%2520works%2520in%2520css%253F%2520For%2520border%2520radius%2520we%2520need%2520to%2520write%2520in%2520css%2520as%2520%2522border%253A1px%2520solid%2520black%2522%252C%2520this%2520will%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520give%25201px%2520black%2520colored%2520border%2520in%2520all%2520the%2520side%2520of%2520the%2520block.%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1535713875002-d1d0cf377fde%253Fixid%253DMXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%25253D%25253D%2526ixlib%253Drb-1.2.1%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D500%2526q%253D60%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ERobin%2520liked%2520your%2520post%2520at%25202.30%2520pm%253C%252Fspan%253E%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EHow%2520border%2520works%2520in%2520css%253F%2520For%2520border%2520radius%2520we%2520need%2520to%2520write%2520in%2520css%2520as%2520%2522border%253A1px%2520solid%2520black%2522%252C%2520this%2520will%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520give%25201px%2520black%2520colored%2520border%2520in%2520all%2520the%2520side%2520of%2520the%2520block%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1535713875002-d1d0cf377fde%253Fixid%253DMXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%25253D%25253D%2526ixlib%253Drb-1.2.1%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D500%2526q%253D60%2522%253E%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253ERobin%2520liked%2520your%2520post%2520at%25205.38%2520pm%253C%252Fspan%253E%2520%253Cbr%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253EHow%2520border%2520works%2520in%2520css%253F%2520For%2520border%2520radius%2520we%2520need%2520to%2520write%2520in%2520css%2520as%2520%2522border%253A1px%2520solid%2520black%2522%252C%2520this%2520will%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520give%25201px%2520black%2520colored%2520border%2520in%2520all%2520the%2520side%2520of%2520the%2520block%2520%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fimages.unsplash.com%252Fphoto-1535713875002-d1d0cf377fde%253Fixid%253DMXwxMjA3fDB8MHxzZWFyY2h8MXx8YXZhdGFyfGVufDB8MnwwfA%25253D%25253D%2526ixlib%253Drb-1.2.1%2526auto%253Dformat%2526fit%253Dcrop%2526w%253D500%2526q%253D60%2522%253E"
+  style="width: 100%; height: 1228px; border:0; transform: scale(1); overflow:hidden;"
+  sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+
 </body>
-</html>    
+
+</html>

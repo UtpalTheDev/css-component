@@ -1103,6 +1103,7 @@ text-align:center;
     display:none;
     width:40%;
     min-height:40px;
+    z-index:100;
 
 }
 .toastanim{
