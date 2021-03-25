@@ -1352,7 +1352,7 @@ cursor:pointer;
       overflow:hidden;
       transition: 0.5s;
       padding-top:60px;
-
+      z-index:100;
   }
   .sidenav-t1{
     width:0;
@@ -1364,12 +1364,14 @@ cursor:pointer;
     overflow:hidden;
     transition: 0.5s;
     padding-top:60px;
+    z-index:100;
+
   }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size:1.2em;
-   
+
     color: #818181;
     display: block;
     transition: 0.3s;

@@ -24,8 +24,10 @@ display:inline;
 main{
     display:grid;
     width:100%;
-    height:89vh;
-    grid-template-areas: "sidebar content-body content-body content-body content-body content-body content-body";
+    
+    grid-template-rows: calc(91vh + 4px);
+    grid-template-columns: 15% auto;
+    grid-template-areas: "sidebar content-body";
 }
 .sidebar{
     grid-area: sidebar;
@@ -37,7 +39,7 @@ main{
     position:relative;
     margin:0.5em 0;
     padding:0 5%;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
 
 }
