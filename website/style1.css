@@ -93,3 +93,30 @@ button{
     color:#4596ab;
 }
 
+
+.landing-page{
+    position:fixed;
+    width:100%;
+    top:0;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background:url("bg.svg");
+    background-size:100vw 100vh;
+}
+.landing-page div{
+    width:40%;
+    display:flex;
+    flex-flow:column;
+}
+.landing-page button{
+align-self:flex-end;
+}
+.buble{
+    width:25%;
+    height:25%;
+    position:absolute;
+    z-index: 2;
+}
